@@ -4,6 +4,11 @@ This is a URL shortener API allows users to shorten lengthy URLs and provides a 
 ## Deployment Link on railway
 https://urlshortnerapi-production.up.railway.app/
 
+### Some short link examples
+Facbook - https://urlshortnerapi-production.up.railway.app/url/h0WmqqY0
+Google - https://urlshortnerapi-production.up.railway.app/url/8EZBKpJl
+My Resume - https://urlshortnerapi-production.up.railway.app/url/jXhugdlP
+
 ## Getting Started
 
 ### Prerequisites
@@ -101,11 +106,6 @@ Note: Copy this JWT token for authentication
 3. Use the token in the headers for the `Shorten URL` endpoint.
 4. Access the shortened URL using `Redirect to Original URL` endpoint.
 5. Access all the shortened URL's using `All Shorten URL` endpoint.
-
-### Some short link examples
-Facbook - https://urlshortnerapi-production.up.railway.app/url/jXhugdlP
-Google - https://urlshortnerapi-production.up.railway.app/url/8EZBKpJl
-My Resume - https://urlshortnerapi-production.up.railway.app/url/jXhugdlP
 
 ### Notes
 - Ensure environment variables (database connection, JWT & Express session secret) are correctly set in the `.env` file.
