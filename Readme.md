@@ -5,9 +5,9 @@ This is a URL shortener API allows users to shorten lengthy URLs and provides a 
 https://urlshortnerapi-production.up.railway.app/
 
 ### Some short link examples
-Facbook - https://urlshortnerapi-production.up.railway.app/url/h0WmqqY0
-Google - https://urlshortnerapi-production.up.railway.app/url/8EZBKpJl
-My Resume - https://urlshortnerapi-production.up.railway.app/url/jXhugdlP
+Facbook - https://urlshortnerapi-production.up.railway.app/url/h0WmqqY0<br>
+Google - https://urlshortnerapi-production.up.railway.app/url/8EZBKpJl<br>
+My Resume - https://urlshortnerapi-production.up.railway.app/url/jXhugdlP<br>
 
 ## Getting Started
 
