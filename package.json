@@ -4,7 +4,7 @@
   "description": "This Node.js-based RESTful API employs Express, MongoDB with Mongoose, and Passport for user authentication. It offers URL shortening, storing, and redirection, alongside secure user registration and login functionalities following the MVC model, ensuring efficient and secure URL management.",
   "main": "index.js",
   "scripts": {
-    "start": "npm index.js"
+    "start": "node index.js"
   },
   "author": "Pankaj Kumar",
   "license": "ISC",
