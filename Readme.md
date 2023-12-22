@@ -1,7 +1,7 @@
 # URL Shortener API
 This is a URL shortener API allows users to shorten lengthy URLs and provides a secure way to access the original URLs using shortened versions.
 
-## Deployment Link on railway
+## Deployment Link on railway.app
 https://urlshortnerapi-production.up.railway.app/
 
 ### Some short link examples
