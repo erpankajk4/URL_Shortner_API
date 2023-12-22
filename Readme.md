@@ -102,6 +102,11 @@ Note: Copy this JWT token for authentication
 4. Access the shortened URL using `Redirect to Original URL` endpoint.
 5. Access all the shortened URL's using `All Shorten URL` endpoint.
 
+### Some short link examples
+Facbook - https://urlshortnerapi-production.up.railway.app/url/jXhugdlP
+Google - https://urlshortnerapi-production.up.railway.app/url/8EZBKpJl
+My Resume - https://urlshortnerapi-production.up.railway.app/url/jXhugdlP
+
 ### Notes
 - Ensure environment variables (database connection, JWT & Express session secret) are correctly set in the `.env` file.
 - Replace placeholders (`your_username`, `your_password`, `your_original_url`) with actual values.
