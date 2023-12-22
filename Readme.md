@@ -1,6 +1,9 @@
 # URL Shortener API
 This is a URL shortener API allows users to shorten lengthy URLs and provides a secure way to access the original URLs using shortened versions.
 
+## Deployment Link on railway
+https://urlshortnerapi-production.up.railway.app/
+
 ## Getting Started
 
 ### Prerequisites
@@ -27,7 +30,7 @@ Run the server using `npm start`.
 - **POST /auth/login**: Log in to get authentication token.
 - **POST /url/shorten**: Shorten a URL (requires authentication).
 - **GET /url/:shortURL**: Redirect to the original URL.
-- **GET /url/:allShortenURLs**: Redirect to the original URL (requires authentication).
+- **GET /url/allShortenURLs**: Redirect to the original URL (requires authentication).
 
 ## Key Functionalities
 
