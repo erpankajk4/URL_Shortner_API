@@ -23,11 +23,11 @@ Run the server using `npm start`.
 
 ### API Endpoints
 
-- **POST /register**: Register a new user.
-- **POST /login**: Log in to get authentication token.
-- **POST /shorten**: Shorten a URL (requires authentication).
-- **GET /:shortURL**: Redirect to the original URL.
-- **GET /:allShortenURLs**: Redirect to the original URL.
+- **POST /auth/register**: Register a new user.
+- **POST /auth/login**: Log in to get authentication token.
+- **POST /url/shorten**: Shorten a URL (requires authentication).
+- **GET /url/:shortURL**: Redirect to the original URL.
+- **GET /url/:allShortenURLs**: Redirect to the original URL (requires authentication).
 
 ## Key Functionalities
 
@@ -56,7 +56,6 @@ This project utilizes several key libraries and packages:
 - **dotenv**: Loads environment variables from a `.env` file.
 
 ### Implementation Details
-
 This API uses an MVC (Model-View-Controller) pattern:
 - **Controllers**: Handle logic for authentication (`authController.js`) and URL operations (`urlController.js`).
 - **Models**: Define schemas for users (`User.js`) and URLs (`URL.js`).
@@ -65,7 +64,6 @@ This API uses an MVC (Model-View-Controller) pattern:
 - **Utilities**: `shorten.js` generates short URLs.
 
 ### Testing with Postman
-
 #### Register User
 - **Endpoint**: `POST /auth/register`
 - **Body**: `{ "username": "your_username", "password": "your_password" }`
@@ -88,7 +86,7 @@ Note: Copy this JWT token for authentication
 - **Endpoint**: `GET /url/:shortURL`
 - **Description**: Redirects to the original URL associated with the short URL.
 
-#### Shorten URL
+#### All Shorten URL
 - **Endpoint**: `GET /url/allShortenURLs`
 - **Headers**: `Authorization: Bearer <your_token>`
 - **Auth**: `Select Type - JWT Bearer`
@@ -99,10 +97,10 @@ Note: Copy this JWT token for authentication
 2. Login to obtain the JWT token.
 3. Use the token in the headers for the `Shorten URL` endpoint.
 4. Access the shortened URL using `Redirect to Original URL` endpoint.
+5. Access all the shortened URL's using `All Shorten URL` endpoint.
 
 ### Notes
-
-- Ensure environment variables (database connection, JWT secret) are correctly set in the `.env` file.
+- Ensure environment variables (database connection, JWT & Express session secret) are correctly set in the `.env` file.
 - Replace placeholders (`your_username`, `your_password`, `your_original_url`) with actual values.
 - Refer to the API routes and their associated functionalities described above.
 
